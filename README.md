@@ -1,5 +1,5 @@
-# Clarion_Machine_Test 
-Test Assignment of clarion duration 2:00 hr
+# Clarion_Machine_Test_01 
+Test Assignment of Clarion Technologies, Duration 2:00 HR
 ---------------------------------------------------------------------------------
 ### Assets Used for Automation :desktop_computer:
 1. OS: Linux
