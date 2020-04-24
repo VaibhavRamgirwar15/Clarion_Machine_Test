@@ -14,6 +14,7 @@ public class TC1_clarion_LoginTest_inValidUsernamePass_01 extends TestBase_Class
 			LoginPage lPage;
 			Reporting report;
 			Readconfig objConfig = new Readconfig();
+			
 	@Test(priority = 1)
 	public void withoutUsernamePasswordTest() throws InterruptedException
 	{	
@@ -45,9 +46,10 @@ public class TC1_clarion_LoginTest_inValidUsernamePass_01 extends TestBase_Class
 				//Step1: Click on login button with username without password
 				lPage.setUsername(objConfig.getUserName());
 				
+				report.capturedScreenShot(driver, "TC01_SC02");
 				lPage.clickOnLoginButton();
 				
-				report.capturedScreenShot(driver, "TC01_SC02");
+				report.capturedScreenShot(driver, "TC01_SC03");
 				
 				Thread.sleep(3000);
 

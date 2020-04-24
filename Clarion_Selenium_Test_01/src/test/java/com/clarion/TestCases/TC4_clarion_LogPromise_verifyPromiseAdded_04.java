@@ -23,6 +23,7 @@ public class TC4_clarion_LogPromise_verifyPromiseAdded_04 extends TestBase_Class
 	SimpleDateFormat formatt= new SimpleDateFormat("dd/mm/yy HH:mm:ss");
 	Date date= new Date();
 	Readconfig objConfig = new Readconfig();
+	
 	@Test(priority = 1)
 	public void verifyingNewlyAddedPromiseInLogPromise() throws InterruptedException
 	{
@@ -65,11 +66,12 @@ public class TC4_clarion_LogPromise_verifyPromiseAdded_04 extends TestBase_Class
 				this.datePicker("April, 2020", "22");
 				
 				objPromise.clickOnEndDateCalender();
-				this.datePicker("April, 2020", "24");
+				//this.datePicker("April, 2020", "24");
+				objPromise.setEndDate("24-04-2020");
 				report.capturedScreenShot(driver, "TC04_SC7");
 				
 				//Step8: Click on search button
-				objPromise.clickOnSearchButton(); //update xpath if fails
+				objPromise.clickOnSearchButton(); 
 				report.capturedScreenShot(driver, "TC04_SC8");
 				
 				//Step9 Verify the added value
@@ -77,6 +79,7 @@ public class TC4_clarion_LogPromise_verifyPromiseAdded_04 extends TestBase_Class
 				String tablePromiseText = this.comparisionWithMultiWebElements(elements, writePromiseText);
 				Assert.assertEquals(writePromiseText, tablePromiseText);
 				report.capturedScreenShot(driver, "TC04_SC9");
+				System.out.println("Verified Promise has been verified succesfully..!!!");
 				
 	}
 	

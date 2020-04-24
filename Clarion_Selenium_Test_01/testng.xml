@@ -3,6 +3,7 @@
 <suite name="ClarionSelenium_Suite">
   <test thread-count="5" name="ClarionSelenium_Test">
     <classes>
+    	<class name="com.clarion.TestCases.TC4_clarion_LogPromise_verifyPromiseAdded_04"/>
       <method>
       </method>
     </classes>

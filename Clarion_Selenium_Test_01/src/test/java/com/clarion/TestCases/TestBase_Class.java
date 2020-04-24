@@ -24,23 +24,17 @@ public class TestBase_Class {
 	@BeforeClass
 	public void launchBrowser_setUpMethod() {
 		
-		if(objConfig.getBrowser().equalsIgnoreCase(("chrome")))
-		{
-			System.setProperty("webdriver.chrome.driver", objConfig.getChromePath());
-			//System.setProperty("webdriver.chrome.driver", "/home/vaibhav/Browser_Driver/chromedriver_linux64/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", objConfig.getChromePath());
+			System.setProperty("webdriver.chrome.driver", "/home/vaibhav/Browser_Driver/chromedriver_linux64/chromedriver");
 			driver= new ChromeDriver();
-		}else if(objConfig.getBrowser().equalsIgnoreCase("firefox"))
-		{
-			System.setProperty("webdriver.gecko.driver", objConfig.getFirefoxPath());
-			//System.setProperty("webdriver.chrome.driver", "/home/vaibhav/Browser_Driver/chromedriver_linux64/chromedriver");
-			driver= new ChromeDriver();
-		}
+			driver.get(objConfig.getApplicationURL());
+		
 	}
 	
 	@BeforeMethod
 	public void lauchApplication()
 	{
-		driver.get(objConfig.getApplicationURL());
+		System.out.println("Appliation URl Check:"+objConfig.getApplicationURL());
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -72,8 +66,9 @@ public class TestBase_Class {
 	
 	public String comparisionWithMultiWebElements(List<WebElement> tableData, String writePromise)
 	{
+		int noOfElements= tableData.size();
 		String matchFound="";
-		for(int i=0; i<tableData.size(); i++)
+		for(int i=0; i< noOfElements; i++)
 		{
 			if(writePromise.equals(tableData.get(i).getText()))
 			{

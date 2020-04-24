@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31742" started-at="2020-04-24T05:22:08Z" finished-at="2020-04-24T05:22:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31742" started-at="2020-04-24T05:22:08Z" finished-at="2020-04-24T05:22:40Z">
+      <class name="com.clarion.TestCases.TC4_clarion_LogPromise_verifyPromiseAdded_04">
+        <test-method status="PASS" signature="launchBrowser_setUpMethod()[pri:0, instance:com.clarion.TestCases.TC4_clarion_LogPromise_verifyPromiseAdded_04@6093dd95]" name="launchBrowser_setUpMethod" is-config="true" duration-ms="12322" started-at="2020-04-24T05:22:08Z" finished-at="2020-04-24T05:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser_setUpMethod -->
+        <test-method status="PASS" signature="lauchApplication()[pri:0, instance:com.clarion.TestCases.TC4_clarion_LogPromise_verifyPromiseAdded_04@6093dd95]" name="lauchApplication" is-config="true" duration-ms="921" started-at="2020-04-24T05:22:20Z" finished-at="2020-04-24T05:22:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchApplication -->
+        <test-method status="PASS" signature="verifyingNewlyAddedPromiseInLogPromise()[pri:1, instance:com.clarion.TestCases.TC4_clarion_LogPromise_verifyPromiseAdded_04@6093dd95]" name="verifyingNewlyAddedPromiseInLogPromise" duration-ms="17810" started-at="2020-04-24T05:22:21Z" finished-at="2020-04-24T05:22:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingNewlyAddedPromiseInLogPromise -->
+        <test-method status="PASS" signature="closeAllInstances()[pri:0, instance:com.clarion.TestCases.TC4_clarion_LogPromise_verifyPromiseAdded_04@6093dd95]" name="closeAllInstances" is-config="true" duration-ms="509" started-at="2020-04-24T05:22:39Z" finished-at="2020-04-24T05:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAllInstances -->
+      </class> <!-- com.clarion.TestCases.TC4_clarion_LogPromise_verifyPromiseAdded_04 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

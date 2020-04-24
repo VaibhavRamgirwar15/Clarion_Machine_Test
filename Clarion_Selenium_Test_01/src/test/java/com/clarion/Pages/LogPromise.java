@@ -36,9 +36,25 @@ WebDriver driver;
 	@FindBy(id = "idImg2")
 	WebElement endDateCalenderImg;
 	
+	@FindBy (xpath = "//b[contains(text(),'LOGOUT')]")
+	public WebElement logout;
+	
 	//update id if not work
-	@FindBy(id = "btnSerach")
+	@FindBy(xpath = "//input[@name='btnSearch']")
 	WebElement searchButton;
+	
+	@FindBy(xpath = "//input[@id='txtEndDate']")
+	WebElement endDateTextBox;
+	
+	public void setEndDate(String date)
+	{
+		endDateTextBox.sendKeys(date);
+	}
+	
+	public void clickOnLogout()
+	{
+		logout.click();
+	}
 	
 	public void clickOnSearchButton()
 	{

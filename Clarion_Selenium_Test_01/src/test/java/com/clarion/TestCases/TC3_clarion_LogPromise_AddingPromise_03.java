@@ -14,7 +14,7 @@ import com.clarion.Utilities.Reporting;
 
 public class TC3_clarion_LogPromise_AddingPromise_03 extends TestBase_Class{
 
-	//Object Referances
+	//Object References
 	LogPromise objPromise;
 	LoginPage lpage_2;
 	Reporting report;
